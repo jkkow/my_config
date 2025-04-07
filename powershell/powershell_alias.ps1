@@ -5,7 +5,7 @@ function llf { Get-ChildItem -File} # list files only
 function lla { Get-ChildItem -Attributes Hidden, !Hidden} # list hidden and non-hidden files
 
 ## eza command
-function tree { & eza -h --icons=auto --no-permission --tree --level=$args}
+function tree { & eza -h --icons=auto --tree --level=$args}
 
 # copying current folder name
 function cpwd { (pwd).path | Set-Clipboard }
