@@ -22,14 +22,25 @@ config.initial_cols = 120
 config.initial_rows = 30
 config.default_cursor_style = "BlinkingBar"
 config.enable_tab_bar = false
+
 config.background = {
     {
+        -- background image
         source = {
-            Color = "#1A0947",
+            File = "C:\\Users\\jkkow\\.config\\wezterm\\bg-monterey.png", -- The file located in the same directory
+        },
+        opacity = 0.9,                                           -- Adjust the transparency (0.0 to 1.0)
+        vertical_align = "Middle",                               -- Options: "Top", "Middle", "Bottom"
+        horizontal_align = "Center",                             -- Options: "Left", "Center", "Right"
+    },
+    {
+        -- Add an overlay color to the background image
+        source = {
+            Color = "#170738",
         },
         width = "100%",
         height = "100%",
-        opacity = 0.95,
+        opacity = 0.55,
     },
 }
 
